@@ -5,22 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kumbh+Sans:400,700&amp;lang=en" />
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <header>
+    <img id="logo" src="images/logo.svg" alt="logo"/>
+    <nav>
+      <div>Collections</div>
+      <div>Men</div>
+      <div>Women</div>
+      <div>About</div>
+      <div>Contact</div>
+    </nav>
+    <div id="user-menu">
+      <img src="./images/icon-cart.svg" alt="cart">
+      <img src="./images/image-avatar.png" alt="avatar">
+    </div>
+  </header>
+  <main>
+    <div>
+      <img id="big-image" src="./images/image-product-1.jpg" alt="product">
+      <div id="thumbnails">
+        <img class="thumbnail active" src="./images/image-product-1-thumbnail.jpg" alt="thumbnail"/>
+        <img class="thumbnail" src="./images/image-product-2-thumbnail.jpg" alt="thumbnail"/>
+        <img class="thumbnail" src="./images/image-product-3-thumbnail.jpg" alt="thumbnail"/>
+        <img class="thumbnail" src="./images/image-product-4-thumbnail.jpg" alt="thumbnail"/>
+      </div>
+    </div>
+    <div id="product-info">
+      <div id="brand">Sneaker Company</div>
+      <div id="title">Fall Limited Edition Sneakers</div>
+      <div id="description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</div>
+      <div id="prices-container">
+        <div>
+          <span id="price">$125.00</span><span id="discount">50%</span>
+        </div>
+        <div id="full-price">$250.00</div>
+      </div>
+      <div id="buttons-container">
+        <div id="quantity-buttons">
+          <span id="minus-button" class="quantity-button">-</span>
+          <input id="quantity" type="text" value="0"/>
+          <span id="plus-button" class="quantity-button">+</span>
+        </div>
+        <div id="add-button">
+          <img src="./images/icon-cart.svg" alt="cart">
+          <span>Add to cart</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  
+  
+  
+<!--   
 
   Sneaker Company
 
@@ -34,11 +77,11 @@
   $250.00
 
   0
-  Add to cart
+  Add to cart -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/beforexmas">Raoul Sbarberi</a>.
+  </footer>
 </body>
 </html>
